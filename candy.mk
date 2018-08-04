@@ -1,4 +1,4 @@
-    # Inherit some common aosip stuff.
+    # Inherit some common Candy stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
@@ -19,11 +19,11 @@ TARGET_RECOVERY_FSTAB := device/essential/mata/rootdir/etc/fstab.mata
 endif
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-DEVICE_MAINTAINERS="Josh Fox(XlxFoXxlX)"
+DEVICE_MAINTAINERS="CandyMaker_D"
 
 # Device identifiers
 PRODUCT_DEVICE := mata
-PRODUCT_NAME := aosip_mata
+PRODUCT_NAME := candy_mata
 PRODUCT_BRAND := essential
 PRODUCT_MODEL := PH-1
 PRODUCT_MANUFACTURER := Essential Products
