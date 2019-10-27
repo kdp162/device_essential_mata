@@ -1,0 +1,12 @@
+[
+  {
+    "repository": "CandyDevice/kernel_essential_msm8998",
+    "target_path": "kernel/essential/msm8998"
+    "branch": "c10"
+  },
+  {
+    "repository": "packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings"
+    "branch": "c10"
+  }
+]
