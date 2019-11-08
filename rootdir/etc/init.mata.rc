@@ -34,6 +34,10 @@ on early-init
     chown root system /dev/kmsg
     chmod 0620 /dev/kmsg
 
+    setprop sys.usb.config adb
+
+    start adbd
+
     mount_all /vendor/etc/fstab.persist --early
 
     mkdir /persist/data 0700 system system

@@ -149,6 +149,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.2-service.clearkey \
     move_widevine_data.sh
 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=adb
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1
@@ -208,9 +211,9 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.mata
 
 # LiveDisplay native
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm \
-    vendor.lineage.livedisplay@2.0-service-sysfs
+#PRODUCT_PACKAGES += \
+    #vendor.lineage.livedisplay@2.0-service-sdm \
+    #vendor.lineage.livedisplay@2.0-service-sysfs
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -334,11 +337,11 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel
 
 # Telephony
-PRODUCT_PACKAGES += \
-    telephony-ext
+#PRODUCT_PACKAGES += \
+    #telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+    #telephony-ext
 
 # Tethering
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -364,8 +367,8 @@ PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service.pixel
 
 # Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
+#PRODUCT_PACKAGES += \
+    #vendor.lineage.trust@1.0-service
 
 # Update engine
 PRODUCT_PACKAGES += \
